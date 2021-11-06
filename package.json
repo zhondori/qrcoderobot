@@ -1,0 +1,22 @@
+{
+  "name": "13-dars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.12",
+    "node-telegram-bot-api": "^0.54.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
