@@ -1,6 +1,14 @@
+const express = require("express");
+const app = express();
 const TelegramBot = require("node-telegram-bot-api");
 const TOKEN = require("./config").TOKEN;
 
+app.get("/", (req, res) => {
+    res.json({
+        ok: true,
+        message: "QR Code bot"
+    })
+})
 const bot = new TelegramBot(TOKEN, {
     polling: true,
 })
@@ -20,3 +28,5 @@ bot.on("message", async (msg) => {
         }
     }
 })
+
+app.listen(3000, () => console.log("Server running on Port 3000"))
